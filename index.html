@@ -6,129 +6,158 @@
     <title>Diego Hoyos</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css" </head>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <figure class="logo">
-                    <img src="images/logo.png" alt="" height="50px">
-                </figure>
-                <nav class="menu">
-                    <ol>
-                        <li>
-                            <a class="link" href="#Portafolio">Proyectos</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#Diplomas">Diplomas</a>
-                        </li>
-                        <li>
-                            <a class="link" href="#TrabajemosJuntos">Trabajemos Juntos</a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </header>
-        <section class="hero">
-            <div class="container">
-                <h1>
-                    Hola! Soy <strong>Diego Hoyos</strong> <br/>Ingeniero de <strong>Sistemas</strong> con <br> pasión por el <strong>Desarrollo</strong>
-                </h1>
-                <img class="hero_img" src="images/hero.jpg" width="500" height="300">
-            </div>
-        </section>
-        <section class="portfolio" id="Portafolio">
-            <div class="container">
-                <h2>Portafolio (Proyectos Destacados)</h2>
-                <Article class="project">
-                    <div class="project_details">
-                        <h3 class="project_title">Portafolio</h3>
-                        <h6 class="project_course">Curso Desarrollo Web Online</h6>
-                        <p class="project_date"><small><strong>Fecha:</strong> 24/06/2020</small></p>
-                        <p class="project_url"><small><strong>Puedes verlo en:</strong>https://diegohch.github.io/PortafolioWeb/</small></p>
-                        <p class="project_descripcion">Portafolio fue el resultado del curso de Desarrollo Web Online, dictado por el Profesor Leonidas esteban.
-                        </p>
-                    </div>
-                    <figure class="project_imageContainer">
-                        <img class="project_image" src="images/portafolio-desarrollo-web.png" alt="" width="500" height="">
-                    </figure>
-                </Article>
-            </div>
-        </section>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <i class="icon-menu burguer_button" id="burger_menu"></i>
+    <header class="header">
         <div class="container">
-            <h2 class="event_list_title">Más sobre mis Estudios</h2>
+            <figure class="logo">
+                <img src="images/logo.png" alt="" height="50px">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#Portafolio">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#Diplomas">Diplomas</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#TrabajemosJuntos">Trabajemos Juntos</a>
+                    </li>
+                </ol>
+            </nav>
         </div>
-        <section id="Diplomas" class="event_list">
-            <div class="container">
-                <article class="event">
-                    <figure class="event_imageContainer">
-                        <img class="event_image" src="images/curso-web.jpg" alt="" width="500" height="300">
-                    </figure>
-                    <div class="event_detail">
-                        <h3 class="event_title">Curso de Desarrollo Web Online</h3>
-                        <p class="event_description">Crea sitios web desde cero con una interfaz gráfica dinámica y atractiva en el navegador y dispositivos móviles, aplicando HTML,CSS y Javascript.</p>
-                        <a class="event_url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
-                    </div>
-                </article>
-                <article class="event">
-                    <figure class="event_imageContainer">
-                        <img class="event_image" src="images/curso-javase.jpg" alt="" width="500" height="300">
-                    </figure>
-                    <div class="event_detail">
-                        <h3 class="event_title">Curso de Introduccion a Java SE</h3>
-                        <p class="event_description">Java es uno de los lenguajes más demandados en la industria, escribe una vez y córrelo donde quieras, es la filosofía de Java.</p>
-                        <a class="event_url" href="https://platzi.com/clases/java-basico/" target="_blank">Ver Curso</a>
-                    </div>
-                </article>
-                <article class="event">
-                    <figure class="event_imageContainer">
-                        <img class="event_image" src="images/curso-javasepoo.jpg" alt="" width="500" height="300">
-                    </figure>
-                    <div class="event_detail">
-                        <h3 class="event_title">Curso de Java SE Orientado a Objetos</h3>
-                        <p class="event_description">Java es uno de los lenguajes más demandados en la industria, escribe una vez y córrelo donde quieras, es la filosofía de Java.</p>
-                        <a class="event_url" href="https://platzi.com/clases/java-oop/" target="_blank">Ver Curso</a>
-                    </div>
-                </article>
-                <article class="event">
-                    <figure class="event_imageContainer">
-                        <img class="event_image" src="images/curso-poo.jpg" alt="" width="500" height="300">
-                    </figure>
-                    <div class="event_detail">
-                        <h3 class="event_title">Curso de Programación Orientada a Objetos: POO</h3>
-                        <p class="event_description">PHP es un lenguaje de programación de código abierto enfocado en la creación de sitios web. Es usado por empresas como Facebook y aplicaciones como WordPress.</p>
-                        <a class="event_url" href="https://platzi.com/clases/oop/" target="_blank">Ver Curso</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section class="contact" id="TrabajemosJuntos">
-            <div class="container">
-                <form class="form_email" action="/suscripcion/">
-                    <h3>¿Creamos algo Juntos?</h3>
-                    <input type="text" placeholder="Déjame tu Email">
-                    <button>Enviar</button>
-                </form>
-                <div class="social">
-                    <a href="https://twitter.com/dfchaakon" class="social_link twitter" target="_blank"></a>
-                    <a href="https://www.facebook.com/Dfchaakon" class="social_link facebook" target="_blank"></a>
-                    <a href="https://github.com/DiegoHCH" class="social_link github" target="_blank"></a>
-                    <a href="https://www.instagram.com/dfchaakon/" class="social_link instagram" target="_blank"></a>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <div>
-                    <p>Curso de Desarrollo Web Online 2018 <img src="images/platzi.png" alt="" width="80" target="_blank"></p>
-                </div>
-                <div>
-                    <p>Designed with
-                        <\3 by <a href="https://www.instagram.com/dfchaakon/">dfchaakon </a>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Diego Hoyos</strong> <br/>Ingeniero de <strong>Sistemas</strong> con <br> pasión por el <strong>Desarrollo</strong>
+            </h1>
+            <img class="hero_img" src="images/hero.jpg" width="500" height="300">
+        </div>
+    </section>
+    <section class="portfolio" id="Portafolio">
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <Article class="project">
+                <div class="project_details">
+                    <h3 class="project_title">Portafolio</h3>
+                    <h6 class="project_course">Curso Desarrollo Web Online</h6>
+                    <p class="project_date"><small><strong>Fecha:</strong> 24/06/2020</small></p>
+                    <p class="project_url"><small><strong>Puedes verlo en:</strong>https://diegohch.github.io/PortafolioWeb/</small></p>
+                    <p class="project_descripcion">Portafolio fue el resultado del curso de Desarrollo Web Online, dictado por el Profesor Leonidas esteban.
                     </p>
                 </div>
+                <figure class="project_imageContainer">
+                    <img class="project_image" src="images/portafolio-desarrollo-web.png" alt="" width="500" height="">
+                </figure>
+            </Article>
+        </div>
+    </section>
+    <!-- <div class="flexible_video">
+        <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/5XHqyj884ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+    <!-- <video class="html_video" src="videos/f8.mp4" width="1920" height="1080" controls></video> -->
+    <div class="container">
+        <h2 class="event_list_title">Más sobre mis Estudios</h2>
+    </div>
+    <section id="Diplomas" class="event_list">
+        <div class="container">
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="images/curso-web.jpg" alt="" width="500" height="300">
+                </figure>
+                <div class="event_detail">
+                    <h3 class="event_title">Curso de Desarrollo Web Online</h3>
+                    <p class="event_description">Crea sitios web desde cero con una interfaz gráfica dinámica y atractiva en el navegador y dispositivos móviles, aplicando HTML,CSS y Javascript.</p>
+                    <a class="event_url" href="https://platzi.com/clases/html5-css3/" target="_blank">Ver Curso</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="images/curso-javase.jpg" alt="" width="500" height="300">
+                </figure>
+                <div class="event_detail">
+                    <h3 class="event_title">Curso de Introduccion a Java SE</h3>
+                    <p class="event_description">Java es uno de los lenguajes más demandados en la industria, escribe una vez y córrelo donde quieras, es la filosofía de Java.</p>
+                    <a class="event_url" href="https://platzi.com/clases/java-basico/" target="_blank">Ver Curso</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="images/curso-javasepoo.jpg" alt="" width="500" height="300">
+                </figure>
+                <div class="event_detail">
+                    <h3 class="event_title">Curso de Java SE Orientado a Objetos</h3>
+                    <p class="event_description">Java es uno de los lenguajes más demandados en la industria, escribe una vez y córrelo donde quieras, es la filosofía de Java.</p>
+                    <a class="event_url" href="https://platzi.com/clases/java-oop/" target="_blank">Ver Curso</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event_imageContainer">
+                    <img class="event_image" src="images/curso-poo.jpg" alt="" width="500" height="300">
+                </figure>
+                <div class="event_detail">
+                    <h3 class="event_title">Curso de Programación Orientada a Objetos: POO</h3>
+                    <p class="event_description">PHP es un lenguaje de programación de código abierto enfocado en la creación de sitios web. Es usado por empresas como Facebook y aplicaciones como WordPress.</p>
+                    <a class="event_url" href="https://platzi.com/clases/oop/" target="_blank">Ver Curso</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="contact" id="TrabajemosJuntos">
+        <div class="container">
+            <form class="form_email" action="/suscripcion/">
+                <h3>¿Creamos algo Juntos?</h3>
+                <input type="text" placeholder="Déjame tu Email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/dfchaakon" class="social_link twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/Dfchaakon" class="social_link facebook" target="_blank"></a>
+                <a href="https://github.com/DiegoHCH" class="social_link github" target="_blank"></a>
+                <a href="https://www.instagram.com/dfchaakon/" class="social_link instagram" target="_blank"></a>
             </div>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de Desarrollo Web Online 2018 <img src="images/platzi.png" alt="" width="80" target="_blank"></p>
+            </div>
+            <div>
+                <p>Designed with ❤ by <a href="https://www.instagram.com/dfchaakon/">dfchaakon </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        const menu = document.querySelector('.menu');
+        const burguerButton = document.querySelector('#burger_menu')
+        ipad.addListener(validation)
+
+        function validation(event) {
+            if (event.matches) {
+                burguerButton.addEventListener('click', hideShow)
+            } else {
+                burguerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        function hideShow() {
+            if (menu.classList.contains('is_active')) {
+                menu.classList.remove('is_active')
+            } else {
+                menu.classList.add('is_active');
+            }
+        }
+    </script>
+</body>
 
 </html>
